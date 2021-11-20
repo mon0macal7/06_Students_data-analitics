@@ -174,5 +174,3 @@ You are not limited to implementing only the mandatory part. You can add also ot
 ---
 
 > This Readme should be replaced with the project documentation following the SDLC procedures for Agile Software Development Lyfe Cycle.
-
-PRIMER CAMBIO PARA PRIMER COMMIT ELIBABAH
