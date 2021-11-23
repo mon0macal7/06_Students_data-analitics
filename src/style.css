@@ -81,13 +81,13 @@ form button {
 
 /*---------------------------------------// DASHBOARD SCREEN //------------------------------------*/
 
-dashboard {
+main {
     display: grid;
     width: auto;
     height: 100vh;
     grid-template-columns: 1f 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "header header header" "main main aside" "footer footer footer";
+    grid-template-areas: "header header header" "dashboard dashboard aside" "footer footer footer";
     column-gap: 0%;
     row-gap: 0%;
     background-image: url();
@@ -100,8 +100,8 @@ header {
     text-align: center;
 }
 
-main {
-    grid-area: main;
+dashboard {
+    grid-area: dashboard;
     background-color: aqua;
     text-align: center;
 }
