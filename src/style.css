@@ -87,7 +87,7 @@ main {
     height: 100vh;
     grid-template-columns: 1f 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "header header header" "dashboard dashboard aside" "footer footer footer";
+    grid-template-areas: "header header header" "sede1 sede2 sede3" "footer footer footer";
     column-gap: 0%;
     row-gap: 0%;
     background-image: url();
@@ -100,15 +100,21 @@ header {
     text-align: center;
 }
 
-dashboard {
-    grid-area: dashboard;
-    background-color: aqua;
+sede1 {
+    grid-area: sede1;
+    background-color: #f51;
     text-align: center;
 }
 
-aside {
-    grid-area: aside;
-    background-color: #e55;
+sede2 {
+    grid-area: sede2;
+    background-color: #055;
+    text-align: center;
+}
+
+sede3 {
+    grid-area: sede3;
+    background-color: #005;
     text-align: center;
 }
 
