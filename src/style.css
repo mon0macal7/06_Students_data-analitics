@@ -105,12 +105,14 @@ sede1 {
     background-color: #ee964b;
     text-align: center;
     margin-left: 4%;
+    border-radius: 3%;
 }
 
 sede2 {
     grid-area: sede2;
     background-color: #4a8fe7;
     text-align: center;
+    border-radius: 3%;
 }
 
 sede3 {
@@ -118,6 +120,7 @@ sede3 {
     background-color: #1f7a8c;
     text-align: center;
     margin-right: 4%;
+    border-radius: 3%;
 }
 
 footer {
