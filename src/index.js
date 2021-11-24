@@ -1,8 +1,8 @@
 import { alumnasWild, ourData } from "./data.js"; //Recibe el EXPORT de fetch de data.js
-alumnasWild(ourData);
+alumnasWild(ourData, "ajusco");
 
 //------------------------------// Validación usuario-password //------------------------------//
-let validacion = document.getElementById("entry");
+/*let validacion = document.getElementById("entry");
 
 validacion.addEventListener("click", function () {
   let user = document.getElementById("name").value;
@@ -13,4 +13,4 @@ validacion.addEventListener("click", function () {
   } else {
     alert("Acceso denegado");
   }
-});
+});*/
