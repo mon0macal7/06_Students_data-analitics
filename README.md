@@ -64,7 +64,7 @@ Aplicación web para ver un tablero de datos para mostrar a los estudiantes dato
 
 ## 2. Definición de usuario
 
-**Usuario: Director de una escuela de desarrollo web**
+Usuario: Director de una escuela de desarrollo web
 
 ## Historias de Usuario (UX)
 
