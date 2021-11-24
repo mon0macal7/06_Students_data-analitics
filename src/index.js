@@ -1,5 +1,5 @@
-import { alumnasWild } from "./data.js"; //Recibe el EXPORT de fetch de data.js
-alumnasWild();
+import { alumnasWild, ourData } from "./data.js"; //Recibe el EXPORT de fetch de data.js
+alumnasWild(ourData);
 
 //------------------------------// Validación usuario-password //------------------------------//
 let validacion = document.getElementById("entry")
