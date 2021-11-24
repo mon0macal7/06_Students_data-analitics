@@ -88,40 +88,55 @@ main {
     grid-template-columns: 1f 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas: "header header header" "sede1 sede2 sede3" "footer footer footer";
-    column-gap: 0%;
-    row-gap: 0%;
+    column-gap: 2%;
+    row-gap: 4%;
     background-image: url();
     background-size: cover;
 }
 
 header {
     grid-area: header;
-    background-color: blueviolet;
+    background-color: #e2f89c;
     text-align: center;
 }
 
 sede1 {
     grid-area: sede1;
-    background-color: #f51;
+    background-color: #ee964b;
     text-align: center;
+    margin-left: 4%;
+    border-radius: 3%;
 }
 
 sede2 {
     grid-area: sede2;
-    background-color: #055;
+    background-color: #4a8fe7;
     text-align: center;
+    border-radius: 3%;
 }
 
 sede3 {
     grid-area: sede3;
-    background-color: #005;
+    background-color: #1f7a8c;
     text-align: center;
+    margin-right: 4%;
+    border-radius: 3%;
 }
 
 footer {
     grid-area: footer;
-    background-color: #029;
+    background-color: #6b5ca5;
     text-align: center;
+}
+
+.img-fluid {
+    margin-bottom: 3%;
+    border-radius: 3%;
+}
+
+.img-thumbnail {
+    margin-bottom: 3%;
+    border-radius: 50%;
 }
 
 
@@ -142,7 +157,7 @@ dashboard {
 
 header-dash {
     grid-area: header-dash;
-    background-color: #FF0;
+    background-color: #ff0;
     text-align: center;
 }
 
@@ -160,6 +175,6 @@ main-dash {
 
 footer-dash {
     grid-area: footer-dash;
-    background-color: #0F0;
+    background-color: #0f0;
     text-align: center;
 }
