@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Data Dashboard Analytics</title>
@@ -9,81 +10,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--Ícono-->
-    <link
-      rel="icon"
-      href="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png"
-    />
+    <link rel="icon" href="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png" />
 
     <!-- Link bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
-    <!--   Inicia pantalla de acceso (1) -->
+<body>
+    <!----------------   Inicia pantalla de acceso (1) ---------------->
     <section id="access-screen">
-      <div class="login">
-        <img
-          class="logo"
-          src="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png"
-          alt="logo"
-        />
-        <div class="intro">
-          <h1>Ingresa tu usuario y contraseña</h1>
+        <div class="login">
+            <img class="logo" src="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png" alt="logo" />
+            <div class="intro">
+                <h1>Ingresa tu usuario y contraseña</h1>
+            </div>
+
+            <form>
+                <input type="text" id="name" name="Nombre" placeholder="Usuario" required />
+                <input type="password" id="password" name="Acceso" placeholder="Contraseña" required />
+                <br />
+                <button type="button" id="entry">Acceder</button>
+            </form>
         </div>
-
-        <form>
-          <input
-            type="text"
-            id="name"
-            name="Nombre"
-            placeholder="Usuario"
-            required
-          />
-          <input
-            type="password"
-            id="password"
-            name="Acceso"
-            placeholder="Contraseña"
-            required
-          />
-          <br />
-          <button type="button" id="entry">Acceder</button>
-        </form>
-      </div>
     </section>
-    <!-- Estructura Grid para dashboard -->
+    <!----------------- Estructura Grid pantalla sedes ------------->
 
-    <main id="dashboard" hidden>
-      <header>HEADER</header>
-      <sede1>
-        <h1>Sede Ajusco</h1>
-        <img
-          src="../assets/sede ajusco.jpg"
-          class="img-fluid"
-          alt="imgAjusco"
-        />
-        <img src="../assets/ajusmap.png" class="img-thumbnail" alt="map" />
-      </sede1>
-      <sede2>
-        <h1>Sede Chapultepec</h1>
-        <img src="../assets/chapu.JPG" class="img-fluid" alt="imgChapu" />
-        <img src="../assets/mapchap.png" class="img-thumbnail" alt="map" />
-      </sede2>
-      <sede3>
-        <h1>Sede Iztapalapa</h1>
-        <img src="../assets/sedeIztapa.jpg" class="img-fluid" alt="imgIztapa" />
-        <img src="../assets/mapIzta.png" class="img-thumbnail" alt="map" />
-      </sede3>
-      <footer>FOOTER</footer>
+    <main id="sedes" hidden>
+        <header>HEADER</header>
+        <sede1>
+            <h1>Sede Ajusco</h1>
+            <img src="../assets/sede ajusco.jpg" class="img-fluid" alt="imgAjusco" width="350" /><br>
+            <img src="../assets/ajusmap.png" class="img-thumbnail" alt="map" width="100" />
+        </sede1>
+        <sede2>
+            <h1>Sede Chapultepec</h1>
+            <img src="../assets/chapu.JPG" class="img-fluid" alt="imgChapu" width="350" /><br>
+            <img src="../assets/mapchap.png" class="img-thumbnail" alt="map" width="100" />
+        </sede2>
+        <sede3>
+            <h1>Sede Iztapalapa</h1>
+            <img src="../assets/sedeIztapa.jpg" class="img-fluid" alt="imgIztapa" width="350" /><br>
+            <img src="../assets/mapIzta.png" class="img-thumbnail" alt="map" width="100" />
+        </sede3>
+        <footer>FOOTER</footer>
     </main>
 
     <script src="index.js" type="module"></script>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
