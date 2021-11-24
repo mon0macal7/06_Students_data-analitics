@@ -7,10 +7,7 @@ export let alumnasWild = (ourData) => {
         .catch((error) => console.log(error))
 }
 
-//Función para iterar datos del JSON
+//Función para iterar datos
 let wildCodeCamp = (data) => {
-    console.log(data.ajusco)
-        /*for (const each of data.ajusco) {
-        console.log(each)
-        }*/
+    console.log(data.ajusco.generacion.primera.estudiantes)
 }
