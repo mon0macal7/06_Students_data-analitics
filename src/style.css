@@ -79,7 +79,7 @@ form button {
 }
 
 
-/*---------------------------------------// DASHBOARD SCREEN //------------------------------------*/
+/*---------------------------------------// SEDES SCREEN //------------------------------------*/
 
 main {
     display: grid;
@@ -121,5 +121,45 @@ sede3 {
 footer {
     grid-area: footer;
     background-color: #029;
+    text-align: center;
+}
+
+
+/*---------------------------------------// DASHBOARD SCREEN //------------------------------------*/
+
+dashboard {
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-columns: 1f 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header-dash header-dash header-dash" "aside-dash main-dash main-dash" "footer-dash footer-dash footer-dash";
+    column-gap: 0%;
+    row-gap: 0%;
+    background-image: url();
+    background-size: cover;
+}
+
+header-dash {
+    grid-area: header-dash;
+    background-color: #FF0;
+    text-align: center;
+}
+
+aside-dash {
+    grid-area: aside-dash;
+    background-color: #009;
+    text-align: center;
+}
+
+main-dash {
+    grid-area: main-dash;
+    background-color: #020;
+    text-align: center;
+}
+
+footer-dash {
+    grid-area: footer-dash;
+    background-color: #0F0;
     text-align: center;
 }
