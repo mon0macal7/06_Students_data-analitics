@@ -8,6 +8,9 @@ export let alumnasWild = () => {
     //Función para iterar datos del JSON
 
     let wildCodeCamp = (data) => {
-        console.log(data)
+        console.log(data.ajusco)
+        for (const each of data.ajusco) {
+            console.log(each)
+        }
     }
 }
