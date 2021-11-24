@@ -136,6 +136,7 @@ footer {
 
 .img-thumbnail {
     margin-bottom: 3%;
+    border-radius: 50%;
 }
 
 
