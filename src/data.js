@@ -13,11 +13,23 @@ let wildCodeCamp = (data, sede) => {
     console.log(data[sede]);
 };
 
-document.addEventListener("click", function() {
-    document.getElementById("ajus")
+let ajusco = document.getElementById("ajus")
+ajusco.addEventListener("click", function() {
+    console.log(ajusco)
     alumnasWild(ourData, "ajusco");
 });
 
+let chapultepec = document.getElementById("chapu")
+chapultepec.addEventListener("click", function() {
+    console.log(chapultepec)
+    alumnasWild(ourData, "chapultepec");
+});
+
+let iztapalapa = document.getElementById("ixtapa")
+iztapalapa.addEventListener("click", function() {
+    console.log(iztapalapa)
+    alumnasWild(ourData, "iztapalapa");
+});
 //ajusco.generacion.primera.estudiantes
 //Funcion para ingresar de screen 2 a 3 de forma dinámica(screen 3 recibe data de cada una de las sedes)
 // Funcion pàra calcular el numero de alumnos registrados en la sede Ajusco
