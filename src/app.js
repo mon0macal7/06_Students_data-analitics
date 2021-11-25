@@ -1,1 +1,1 @@
-// Aqui se encontrarán las funciones relacionadas con la lógica de la app
+//Encendido de funciones, manejo de lógica de la app
