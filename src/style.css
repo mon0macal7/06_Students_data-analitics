@@ -85,7 +85,7 @@ main {
   height: 100vh;
   grid-template-columns: 1f 1fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
-  grid-template-areas: "header header header" "sede1 sede2 sede3" "footer footer footer";
+  grid-template-areas: "header header header" "section-sedes section-sedes section-sedes" "footer footer footer";
   column-gap: 2%;
   row-gap: 4%;
   background-image: url();
@@ -98,8 +98,23 @@ header {
   text-align: center;
 }
 
+section-sedes {
+  grid-area: section-sedes;
+  background-color: #196b45;
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2%;
+  row-gap: 2%;
+}
+
+section-sedes :hover {
+  transform: scale(1.1);
+}
+
 sede1 {
-  grid-area: sede1;
   background-color: #ee964b;
   text-align: center;
   margin-left: 4%;
@@ -111,7 +126,6 @@ sede1:hover {
 }
 
 sede2 {
-  grid-area: sede2;
   background-color: #4a8fe7;
   text-align: center;
   border-radius: 3%;
@@ -120,7 +134,6 @@ sede2:hover {
   transform: scale(1.1);
 }
 sede3 {
-  grid-area: sede3;
   background-color: #1f7a8c;
   text-align: center;
   margin-right: 4%;
