@@ -8,26 +8,37 @@ export let alumnasWild = (ourData, sede) => {
         .catch((error) => console.log(error));
 };
 
-//Función para iterar datos
+
+//--------------------Función pura para iterar datos-----------------------//
 let wildCodeCamp = (data, sede) => {
     console.log(data[sede]);
 };
 
-let ajusco = document.getElementById("ajus")
-ajusco.addEventListener("click", function() {
-    console.log(ajusco)
+//------------------------- Datos por Ajusco ------------------------------//
+let ajuscoSede = document.getElementById("ajus")
+ajuscoSede.addEventListener("click", function() {
+    console.log("click en", ajuscoSede)
     alumnasWild(ourData, "ajusco");
+
+    //    let imprimir = document.getElementById("dashboard-screen")
+    //  imprimir.innerHTML = "HOLA"
+
 });
 
-let chapultepec = document.getElementById("chapu")
-chapultepec.addEventListener("click", function() {
-    console.log(chapultepec)
+//---------------------- Datos por Chapultepec ---------------------------//
+
+let chapultepecSede = document.getElementById("chapu")
+chapultepecSede.addEventListener("click", function() {
+    console.log(chapultepecSede)
     alumnasWild(ourData, "chapultepec");
 });
 
-let iztapalapa = document.getElementById("ixtapa")
-iztapalapa.addEventListener("click", function() {
-    console.log(iztapalapa)
+
+//----------------------- Datos por Iztapalapa ---------------------------//
+
+let iztapalapaSede = document.getElementById("ixtapa")
+iztapalapaSede.addEventListener("click", function() {
+    console.log(iztapalapaSede)
     alumnasWild(ourData, "iztapalapa");
 });
 //ajusco.generacion.primera.estudiantes
