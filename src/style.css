@@ -112,10 +112,6 @@ section-sedes {
     row-gap: 2%;
 }
 
-section-sedes:hover {
-    transform: scale(1.1);
-}
-
 sede1 {
     background-color: #ee964b;
     text-align: center;
