@@ -12,6 +12,7 @@ validacion.addEventListener("click", () => {
     if (user == "Vania" && contraseña == 7) {
         document.getElementById("access-screen").hidden = true; // pantalla user
         document.getElementById("sedes").hidden = false; // pantalla dashboard
+        document.getElementById("dashboard-screen").hidden = true; // pantalla dashboard
     } else {
         alert("Acceso denegado");
     }

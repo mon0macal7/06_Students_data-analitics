@@ -1,12 +1,28 @@
 export const ourData = "../data/students.json";
 
+
+
 export let alumnasWild = (ourData, sede) => {
-    fetch(ourData)
-        .then((response) => response.json())
-        .then((data) => wildCodeCamp(data, sede))
-        //metodo de objeto para acceder a las keys,darle id a las imagenes: Object.keys(nombreDelObjeto)
-        .catch((error) => console.log(error));
+    const async = generator => {
+        const g = generator();
+        (function next(value) {
+            const n = g.next(value);
+            // console.log(n);
+            if (n.done) return;
+            n.value.then(next);
+        })();
+    };
+    async(function*() {
+
+        const response = yield fetch(ourData)
+        const data = yield response.json()
+        wildCodeCamp(data, sede)
+            //metodo de objeto para acceder a las keys,darle id a las imagenes: Object.keys(nombreDelObjeto)
+            //    .catch((error) => console.log(error));
+
+    })
 };
+
 
 
 //-------------------------- Función iterar datos --------------------------//
@@ -18,7 +34,9 @@ let wildCodeCamp = (data, sede) => {
 //------------------------- Datos por Ajusco ------------------------------//
 let ajuscoSede = document.getElementById("ajus")
 
+
 ajuscoSede.addEventListener("click", () => {
+
     console.log("click en", ajuscoSede)
     console.log("ajusco")
     alumnasWild(ourData, "ajusco");
@@ -29,11 +47,20 @@ ajuscoSede.addEventListener("click", () => {
 
     //------ Función abrir sede en dashboard ------//
 
-    localStorage.removeItem('objectToPass'); // Limpiar el localStorage
-    window.location.href = "./dashboard.html"; // Abrir dashboard
-    alumnasWild(ourData, "ajusco");
-    console.log(myData)
+
+
+
+    document.getElementById("access-screen").hidden = true; // pantalla user
+    document.getElementById("sedes").hidden = true; // pantalla dashboard
+    document.getElementById("dashboard-screen").hidden = false; // pantalla dashboard
+
+
+    /*    localStorage.removeItem('objectToPass'); // Limpiar el localStorage
+        window.location.href = "./dashboard.html"; // Abrir dashboard
+        alumnasWild(ourData, "ajusco");
+        console.log(myData)*/
 });
+
 
 
 //---------------------- Datos por Chapultepec ---------------------------//
