@@ -18,7 +18,7 @@ ajuscoSede.addEventListener("click", () => {
 
     localStorage.removeItem('objectToPass'); // Limpiar el localStorage
     window.location.href = "./index.html"; // Abrir dashboard
-    //    alumnasWild(ourData, "ajusco");
+    //alumnasWild(ourData, "ajusco");
     console.log(myData)
 });
 
