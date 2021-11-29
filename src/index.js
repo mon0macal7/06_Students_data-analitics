@@ -6,7 +6,7 @@ import { alumnasWild, ourData } from "./data.js"; //Recibe el EXPORT de fetch de
 //------------------------------// Validación usuario-password //------------------------------//
 let validacion = document.getElementById("entry");
 
-validacion.addEventListener("click", function() {
+validacion.addEventListener("click", () => {
     let user = document.getElementById("name").value;
     let contraseña = document.getElementById("password").value;
     if (user == "Vania" && contraseña == 7) {
