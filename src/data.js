@@ -9,33 +9,49 @@ export let alumnasWild = (ourData, sede) => {
 };
 
 
-//--------------------Función pura para iterar datos-----------------------//
+//-------------------------- Función iterar datos --------------------------//
 let wildCodeCamp = (data, sede) => {
     console.log(data[sede]);
 };
 
+
 //------------------------- Datos por Ajusco ------------------------------//
 let ajuscoSede = document.getElementById("ajus")
+
 ajuscoSede.addEventListener("click", () => {
     console.log("click en", ajuscoSede)
+    console.log("ajusco")
     alumnasWild(ourData, "ajusco");
 
+    //-- Guardar data para llevarla a dashboard --//
+    let myData = "ajusco";
+    localStorage.setItem('objectToPass', myData);
+
     //------ Función abrir sede en dashboard ------//
-    window.location.href = "dashboard.html";
 
-
+    localStorage.removeItem('objectToPass'); // Limpiar el localStorage
+    window.location.href = "./dashboard.html"; // Abrir dashboard
+    alumnasWild(ourData, "ajusco");
+    console.log(myData)
 });
 
 
 //---------------------- Datos por Chapultepec ---------------------------//
 
 let chapultepecSede = document.getElementById("chapu")
-chapultepecSede.addEventListener("click", function() {
+chapultepecSede.addEventListener("click", () => {
     console.log("click en", chapultepecSede)
     alumnasWild(ourData, "chapultepec");
 
+    //-- Guardar data para llevarla a dashboard --//
+    let myData = "chapultepec";
+    localStorage.setItem('objectToPass', myData);
+
     //------ Función abrir sede en dashboard ------//
-    window.location.href = "dashboard.html"
+    localStorage.removeItem('objectToPass'); // Limpiar el localStorage
+    window.location.href = "dashboard.html" //Abrir dashboard
+    alumnasWild(ourData, "chapultepec");
+    console.log(myData)
 });
 
 
@@ -43,17 +59,19 @@ chapultepecSede.addEventListener("click", function() {
 //----------------------- Datos por Iztapalapa ---------------------------//
 
 let iztapalapaSede = document.getElementById("ixtapa")
-iztapalapaSede.addEventListener("click", function() {
+iztapalapaSede.addEventListener("click", () => {
     console.log("click en", iztapalapaSede)
     alumnasWild(ourData, "iztapalapa");
 
+    //-- Guardar data para llevarla a dashboard --//
+    let myData = "iztapalapa";
+    localStorage.setItem('objectToPass', myData);
+
     //------ Función abrir sede en dashboard ------//
-    window.location.href = "dashboard.html"
-        /*let abrirIztapa = window.open("dashboard.html");
-        let traerDataIzta = () => {
-            abrirIztapa(ourData[iztapalapa])
-        }
-        traerDataIzta()*/
+    localStorage.removeItem('objectToPass'); // Limpiar el localStorage
+    window.location.href = "dashboard.html" // Abrir dashboard
+    alumnasWild(ourData, "iztapalapa");
+    console.log(myData)
 });
 //ajusco.generacion.primera.estudiantes
 //Funcion para ingresar de screen 2 a 3 de forma dinámica(screen 3 recibe data de cada una de las sedes)

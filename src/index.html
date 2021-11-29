@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Data Dashboard Analytics</title>
@@ -9,155 +10,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--Ícono-->
-    <link
-      rel="icon"
-      href="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png"
-    />
+    <link rel="icon" href="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png" />
 
     <!-- Link fontawesome  -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 
     <!-- Link bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!----------------   Inicia pantalla de acceso (1) ---------------->
 
     <section id="access-screen">
-      <div class="login">
-        <img
-          class="logo"
-          src="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png"
-          alt="logo"
-        />
-        <div class="intro">
-          <h1>Ingresa tu usuario y contraseña</h1>
-        </div>
+        <div class="login">
+            <img class="logo" src="https://raw.githubusercontent.com/mon0macal7/06_Students_data-analitics/release/assets/logoWildCode.png" alt="logo" />
+            <div class="intro">
+                <h1>Ingresa tu usuario y contraseña</h1>
+            </div>
 
-        <form>
-          <input
-            type="text"
-            id="name"
-            name="Nombre"
-            placeholder="Usuario"
-            required
-          />
-          <input
-            type="password"
-            id="password"
-            name="Acceso"
-            placeholder="Contraseña"
-            required
-          />
-          <br />
-          <button type="button" id="entry">Acceder</button>
-        </form>
-      </div>
+            <form>
+                <input type="text" id="name" name="Nombre" placeholder="Usuario" required />
+                <input type="password" id="password" name="Acceso" placeholder="Contraseña" required />
+                <br />
+                <button type="button" id="entry">Acceder</button>
+            </form>
+        </div>
     </section>
 
     <!----------------- Estructura Grid pantalla sedes ------------->
 
     <main id="sedes" hidden>
-      <header>HEADER</header>
+        <header>HEADER</header>
 
-      <section-sedes>
-        <sede1 id="ajus">
-          <h1>Sede Ajusco</h1>
-          <img
-            src="../assets/Ajusede.png"
-            class="img-fluid"
-            alt="imgAjusco"
-            width="350"
-          /><br />
-          <img
-            src="../assets/ajusmap.png"
-            class="img-thumbnail"
-            alt="map"
-            width="100"
-          />
-        </sede1>
+        <section-sedes>
+            <sede1 id="ajus">
+                <h1>Sede Ajusco</h1>
+                <img src="../assets/Ajusede.png" class="img-fluid" alt="imgAjusco" width="350" /><br />
+                <img src="../assets/ajusmap.png" class="img-thumbnail" alt="map" width="100" />
+            </sede1>
 
-        <sede2 id="chapu">
-          <h1>Sede Chapultepec</h1>
-          <img
-            src="../assets/chapSede.png"
-            class="img-fluid"
-            alt="imgChapu"
-            width="350"
-          /><br />
-          <img
-            src="../assets/mapchap.png"
-            class="img-thumbnail"
-            alt="map"
-            width="100"
-          />
-        </sede2>
-        <sede3 id="ixtapa">
-          <h1>Sede Iztapalapa</h1>
-          <img
-            src="..//assets/iztaSede.png"
-            class="img-fluid"
-            alt="imgIztapa"
-            width="350"
-          /><br />
-          <img
-            src="../assets/mapIzta.png"
-            class="img-thumbnail"
-            alt="map"
-            width="100"
-          />
-        </sede3>
-      </section-sedes>
-<!-- Aquí comienza el footer -->
-      <footer class= "about">
-          <div class="container">
-              <figure>
-                  <img src="../assets/logoWildCode.png">
-              </figure>
-          
-          <div class="box">
-              <h2>Acerca de nosotros</h2>
-            <p>Nuestro Bootcamp de Desarrollo Web y Móvil Full-Time es un curso intensivo
-             de programación, online o presencial, y completamente práctico que te convertirá en un Programador Junior Full-Stack
-            para añadir valor en la empresa desde el primer día.</p> 
+            <sede2 id="chapu">
+                <h1>Sede Chapultepec</h1>
+                <img src="../assets/chapSede.png" class="img-fluid" alt="imgChapu" width="350" /><br />
+                <img src="../assets/mapchap.png" class="img-thumbnail" alt="map" width="100" />
+            </sede2>
+            <sede3 id="ixtapa">
+                <h1>Sede Iztapalapa</h1>
+                <img src="..//assets/iztaSede.png" class="img-fluid" alt="imgIztapa" width="350" /><br />
+                <img src="../assets/mapIzta.png" class="img-thumbnail" alt="map" width="100" />
+            </sede3>
+        </section-sedes>
+        <!-- Aquí comienza el footer -->
+        <footer class="about">
+            <div class="container">
+                <figure>
+                    <img src="../assets/logoWildCode.png">
+                </figure>
 
-          </div>
-          <div class="box1">
-              <h2>Contacto</h2>
-              <div class="red-social">
-             <!-- Contacto Elibabah -->
-                  <!-- Github -->
-              <a href="https://github.com/Elibabah"
-                ><i class="fab fa-github"></i
-              ></a>
-              <!-- LinkedIn -->
-              <a
-                href="https://www.linkedin.com/in/elías-hernández-elibabah-5b85b5100/"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <!-- Twitter -->
-              <a href="https://twitter.com/ElasHer59446451"
-                ><i class="fab fa-twitter"></i
+                <div class="box">
+                    <h2>Acerca de nosotros</h2>
+                    <p>Nuestro Bootcamp de Desarrollo Web y Móvil Full-Time es un curso intensivo de programación, online o presencial, y completamente práctico que te convertirá en un Programador Junior Full-Stack para añadir valor en la empresa desde el
+                        primer día.</p>
+
                 </div>
-              </div>
+                <div class="box1">
+                    <h2>Contacto</h2>
+                    <div class="red-social">
+                        <!-- Contacto Elibabah -->
+                        <!-- Github -->
+                        <a href="https://github.com/Elibabah"><i class="fab fa-github"></i
+            ></a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/elías-hernández-elibabah-5b85b5100/"><i class="fab fa-linkedin"></i
+            ></a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/ElasHer59446451"><i class="fab fa-twitter"></i>
+                </div>
+            </div>
             </div>
             <div class="group2">
                 <p>&copy;<b>Made by </b>Elibabah & Mon_itto at Ajusco Bootcamp 2021 </p>
             </div>
-          
-      </footer>
+        </footer>
     </main>
 
     <script src="index.js" type="module"></script>
-  </body>
+</body>
 </html>
