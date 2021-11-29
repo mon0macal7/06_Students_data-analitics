@@ -16,13 +16,13 @@ let wildCodeCamp = (data, sede) => {
 
 //------------------------- Datos por Ajusco ------------------------------//
 let ajuscoSede = document.getElementById("ajus")
-ajuscoSede.addEventListener("click", function() {
+ajuscoSede.addEventListener("click", () => {
     console.log("click en", ajuscoSede)
     alumnasWild(ourData, "ajusco");
 
-    //------ Función abrir sede y recibir data -----------//
-    let abrirAjusco = window.open("dashboard.html");
-    abrirAjusco.document.write(ajusco)
+    //------ Función abrir sede en dashboard ------//
+    window.location.href = "dashboard.html";
+
 
 });
 
@@ -31,35 +31,29 @@ ajuscoSede.addEventListener("click", function() {
 
 let chapultepecSede = document.getElementById("chapu")
 chapultepecSede.addEventListener("click", function() {
-    console.log(chapultepecSede)
+    console.log("click en", chapultepecSede)
+    alumnasWild(ourData, "chapultepec");
 
-    let abrirChapu = window.open("dashboard.html");
-    let traerDataChap = () => {
-        abrirChapu.write(chapultepec)
-        alumnasWild(ourData, "chapultepec");
-    }
-    traerDataChap()
-
-
+    //------ Función abrir sede en dashboard ------//
+    window.location.href = "dashboard.html"
 });
 
-
-//------ Función abrir sede y recibir data -----------//
 
 
 //----------------------- Datos por Iztapalapa ---------------------------//
 
 let iztapalapaSede = document.getElementById("ixtapa")
 iztapalapaSede.addEventListener("click", function() {
-    console.log(iztapalapaSede)
+    console.log("click en", iztapalapaSede)
     alumnasWild(ourData, "iztapalapa");
 
-    //------ Función abrir sede y recibir data -----------//
-    let abrirIztapa = window.open("dashboard.html");
-    let traerDataIzta = () => {
-        abrirIztapa(ourData[iztapalapa])
-    }
-    traerDataIzta()
+    //------ Función abrir sede en dashboard ------//
+    window.location.href = "dashboard.html"
+        /*let abrirIztapa = window.open("dashboard.html");
+        let traerDataIzta = () => {
+            abrirIztapa(ourData[iztapalapa])
+        }
+        traerDataIzta()*/
 });
 //ajusco.generacion.primera.estudiantes
 //Funcion para ingresar de screen 2 a 3 de forma dinámica(screen 3 recibe data de cada una de las sedes)
