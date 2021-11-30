@@ -1,15 +1,26 @@
+let dataToArray = [];
+let generacionPorSede = [];
+let estudiantes = [];
+
+
+/*const limpiarArray = () => {
+    return generacionPorSede = [];
+}*/
+
 export const ourData = "../data/students.json";
 
 
-
-let Arr = [];
-
-
 export let alumnasWild = (ourData, sede) => {
+    console.log(ourData)
     fetch(ourData)
         .then((response) => response.json())
-        .then((data) => wildCodeCamp(data, sede))
-        //metodo de objeto para acceder a las keys,darle id a las imagenes: Object.keys(nombreDelObjeto)
+        .then((data) => {
+
+            wildCodeCamp(data, sede)
+                // Pasar data a array vacío
+            dataToArray.push(data)
+            console.log(dataToArray)
+        })
         .catch((error) => console.log(error));
 };
 
