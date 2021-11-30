@@ -1,5 +1,10 @@
 export const ourData = "../data/students.json";
 
+
+
+let Arr = [];
+
+
 export let alumnasWild = (ourData, sede) => {
     fetch(ourData)
         .then((response) => response.json())
