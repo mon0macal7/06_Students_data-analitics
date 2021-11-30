@@ -1,44 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Poppins:wght@300&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+
+:root {
+  --primary: #136f63;
+  --light: #b1a6a6;
+  --grey: #032b43;
+}
 body {
-    background-color: #000;
+  overflow: hidden;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: 300;
+  color: var(--primary);
 }
 
-
-/*---------------------------------------// DASHBOARD SCREEN //------------------------------------*/
-
-dashboard {
-    display: grid;
-    width: auto;
-    height: 100vh;
-    grid-template-columns: 1f 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "header-dash header-dash header-dash" "aside-dash main-dash main-dash" "footer-dash footer-dash footer-dash";
-    column-gap: 0%;
-    row-gap: 0%;
-    background-image: url();
-    background-size: cover;
+a {
+  text-decoration: none;
 }
 
-header-dash {
-    grid-area: header-dash;
-    background-color: #ff0;
-    text-align: center;
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
-aside-dash {
-    grid-area: aside-dash;
-    background-color: #009;
-    text-align: center;
+#sidebar-container {
+  min-height: 100vh;
+}
+#sidebar-container .logo {
+  padding: 0.875em 1.25rem;
+}
+#content {
+  overflow-y: auto;
+  height: 100vh;
+  padding-bottom: 5rem;
+}
+.stat {
+  border-right: 1 px solid var(--grey);
 }
 
-main-dash {
-    grid-area: main-dash;
-    background-color: #020;
-    text-align: center;
-}
-
-footer-dash {
-    grid-area: footer-dash;
-    background-color: #0f0;
-    text-align: center;
+@media (max-width: 768px) {
+  #sidebar-container {
+    display: none;
+  }
+  .stat {
+    border: 0;
+  }
 }
