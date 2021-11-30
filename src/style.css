@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 25px;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
