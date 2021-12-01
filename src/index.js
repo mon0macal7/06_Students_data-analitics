@@ -1,27 +1,26 @@
 import { alumnasWild, ourData } from "./data.js"; //Recibe el EXPORT de fetch de data.js
 
-document.getElementById("sedes").hidden = false
-document.getElementById("screenDash").hidden = true
+document.getElementById("sedes").hidden = false;
+document.getElementById("screenDash").hidden = true;
 
-let entrar = document.getElementById("entrar-dashboard")
+let entrar = document.getElementById("entrar-dashboard");
 entrar.addEventListener("click", () => {
+  document.getElementById("sedes").hidden = true;
+  document.getElementById("screenDash").hidden = false;
+});
 
-    document.getElementById("sedes").hidden = true
-    document.getElementById("screenDash").hidden = false
-})
-
-alumnasWild(ourData)
+alumnasWild(ourData);
 
 window.dashboard = {
-        sede: (key) => {
-            dataToArray(key)
-        },
-        generacion: (generacion) => {
-            generacionPorSede(generacion)
-        },
-    }
-    //------------------------- Datos por Ajusco ------------------------------//
-    /*let ajuscoSede = document.getElementById("ajus");
+  sede: (key) => {
+    dataToArray(key);
+  },
+  generacion: (generacion) => {
+    generacionPorSede(generacion);
+  },
+};
+//------------------------- Datos por Ajusco ------------------------------//
+/*let ajuscoSede = document.getElementById("ajus");
 
     ajuscoSede.addEventListener("click", () => {
         console.log("click en", ajuscoSede);
@@ -47,12 +46,10 @@ window.dashboard = {
         window.location.href = "./index.html";
     });*/
 
-
 //-----------------------------// Botón Volver Inicio Sedes //---------------------------------//
 
-let volver = document.getElementById("inicio")
+let volver = document.getElementById("inicio");
 volver.addEventListener("click", () => {
-
-    document.getElementById("sedes").hidden = false
-    document.getElementById("screenDash").hidden = true
-})
+  document.getElementById("sedes").hidden = false;
+  document.getElementById("screenDash").hidden = true;
+});
