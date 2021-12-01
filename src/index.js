@@ -1,24 +1,27 @@
-import { alumnasWild, ourData, traerSedes, traerGene, cleanGeneration } from "./data.js"; //Recibe el EXPORT de fetch de data.js
+import {
+  alumnasWild,
+  ourData,
+  traerSedes,
+  traerGene,
+  cleanGeneration,
+} from "./data.js"; //Recibe el EXPORT de fetch de data.js
 
 document.getElementById("sedes").hidden = false;
 document.getElementById("screenDash").hidden = true;
 
 let entrar = document.getElementById("entrar-dashboard");
 entrar.addEventListener("click", () => {
-    document.getElementById("sedes").hidden = true;
-    document.getElementById("screenDash").hidden = false;
+  document.getElementById("sedes").hidden = true;
+  document.getElementById("screenDash").hidden = false;
 });
 
 alumnasWild(ourData);
 
 window.dashboard = {
-    generacion: (generacion) => {
-        traerGene(generacion);
-
-    },
-
+  generacion: (generacion) => {
+    traerGene(generacion);
+  },
 };
-
 
 //------------------------- Datos por Ajusco ------------------------------//
 /*let ajuscoSede = document.getElementById("ajus");
@@ -45,14 +48,14 @@ window.dashboard = {
         console.log("click en", iztapalapaSede);
         //------ Función abrir sede en dashboard ------//
         window.location.href = "./index.html";
+
     });*/
 
 //-----------------------------// Botón Volver Inicio Sedes //---------------------------------//
 
-
 let volver = document.getElementById("inicio");
 volver.addEventListener("click", () => {
-    document.getElementById("sedes").hidden = false;
-    document.getElementById("screenDash").hidden = true;
-    cleanGeneration() // encender función limpiar generación por sede 
+  document.getElementById("sedes").hidden = false;
+  document.getElementById("screenDash").hidden = true;
+  cleanGeneration(); // encender función limpiar generación por sede
 });
