@@ -43,3 +43,16 @@ iztapalapaSede.addEventListener("click", () => {
     //------ Función abrir sede en dashboard ------//
     window.location.href = "./index.html";
 });*/
+
+
+
+
+
+//-----------------------------// Botón Volver Inicio Sedes //---------------------------------//
+
+let volver = document.getElementById("inicio")
+volver.addEventListener("click", () => {
+
+    document.getElementById("sedes").hidden = false
+    document.getElementById("screenDash").hidden = true
+})
