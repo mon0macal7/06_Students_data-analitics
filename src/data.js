@@ -9,7 +9,6 @@ let estudiantes = [];
 
 export const ourData = "../data/students.json";
 
-
 export let alumnasWild = (ourData, sede) => {
     console.log(ourData)
     fetch(ourData)

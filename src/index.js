@@ -12,33 +12,40 @@ entrar.addEventListener("click", () => {
 
 alumnasWild(ourData)
 
-//window
-//------------------------- Datos por Ajusco ------------------------------//
-/*let ajuscoSede = document.getElementById("ajus");
+window.dashboard = {
+        sede: (key) => {
+            dataToArray(key)
+        },
+        generacion: (generacion) => {
+            generacionPorSede(generacion)
+        },
+    }
+    //------------------------- Datos por Ajusco ------------------------------//
+    /*let ajuscoSede = document.getElementById("ajus");
 
-ajuscoSede.addEventListener("click", () => {
-    console.log("click en", ajuscoSede);
-    //------ Función abrir sede en dashboard ------//
-    window.location.href = "./index.html";
-});
+    ajuscoSede.addEventListener("click", () => {
+        console.log("click en", ajuscoSede);
+        //------ Función abrir sede en dashboard ------//
+        window.location.href = "./index.html";
+    });
 
-//---------------------- Datos por Chapultepec ---------------------------//
+    //---------------------- Datos por Chapultepec ---------------------------//
 
-let chapultepecSede = document.getElementById("chapu");
-chapultepecSede.addEventListener("click", () => {
-    console.log("click en", chapultepecSede);
-    //------ Función abrir sede en dashboard ------//
-    window.location.href = "./index.html";
-});
+    let chapultepecSede = document.getElementById("chapu");
+    chapultepecSede.addEventListener("click", () => {
+        console.log("click en", chapultepecSede);
+        //------ Función abrir sede en dashboard ------//
+        window.location.href = "./index.html";
+    });
 
-//----------------------- Datos por Iztapalapa ---------------------------//
+    //----------------------- Datos por Iztapalapa ---------------------------//
 
-let iztapalapaSede = document.getElementById("ixtapa");
-iztapalapaSede.addEventListener("click", () => {
-    console.log("click en", iztapalapaSede);
-    //------ Función abrir sede en dashboard ------//
-    window.location.href = "./index.html";
-});*/
+    let iztapalapaSede = document.getElementById("ixtapa");
+    iztapalapaSede.addEventListener("click", () => {
+        console.log("click en", iztapalapaSede);
+        //------ Función abrir sede en dashboard ------//
+        window.location.href = "./index.html";
+    });*/
 
 
 //-----------------------------// Botón Volver Inicio Sedes //---------------------------------//
