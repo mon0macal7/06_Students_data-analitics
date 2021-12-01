@@ -6,7 +6,7 @@ let estudiantes = [];
     return generacionPorSede = [];
 }*/
 
-
+//let iconoDinamico = ""
 
 //función limpiar generacion
 export const cleanGeneration = () => {
@@ -26,7 +26,7 @@ export const alumnasWild = () => {
         })
         .catch((error) => console.log(error));
 };
-//----------------------------- Función iterar datos --------------------------//
+//----------------------------- Función iterar sedes --------------------------//
 //------------ Traer llaves ----------------//
 export const traerSedes = (nuestraData) => {
     console.log(nuestraData);
@@ -50,12 +50,9 @@ export const traerGene = (sede) => {
         ).innerHTML += `<a onclick="dashboard.traerGene('${generacion}')"class="d-block text-light p-3"
 ><i class="fas fa-user-graduate mr-2 lead"></i>${generacion} generación</a>`
         document.getElementById("nombreSede").innerHTML = "Sede" + " " + sede
-
-
-
+            //  addEventListener
 
     }
-
 };
 
 
