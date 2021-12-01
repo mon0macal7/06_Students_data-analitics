@@ -2,34 +2,35 @@ let dataToArray = [];
 let generacionPorSede = [];
 let estudiantes = [];
 
-
 /*const limpiarArray = () => {
     return generacionPorSede = [];
 }*/
 
 export const ourData = "../data/students.json";
 
-export let alumnasWild = (ourData, sede) => {
-    console.log(ourData)
-    fetch(ourData)
-        .then((response) => response.json())
-        .then((data) => {
-
-            wildCodeCamp(data, sede)
-                // Pasar data a array vacío
-            dataToArray.push(data)
-            console.log(dataToArray)
-        })
-        .catch((error) => console.log(error));
+export let alumnasWild = (ourData) => {
+  //console.log(ourData);
+  fetch(ourData)
+    .then((response) => response.json())
+    .then((data) => {
+      //wildCodeCamp(data, sede);
+      //Pasar data a array vacío
+      dataToArray.push(data);
+      console.log(dataToArray);
+    })
+    .catch((error) => console.log(error));
 };
-
 
 //-------------------------- Función iterar datos --------------------------//
-let wildCodeCamp = (data, sede) => {
-    // console.log(data[sede]);
+const traerSedes = (ourData) => {
+  for (const key in ourData) {
+    console.log(key);
+    //  document.getElementById("").innerHTML+=`
+  }
 };
-
-// ITERAR CON FOR OF ARRAY 
+/*let wildCodeCamp = (data, sede) => {
+  // console.log(data[sede]);
+};*/
 
 //ajusco.generacion.primera.estudiantes
 //Funcion para ingresar de screen 2 a 3 de forma dinámica(screen 3 recibe data de cada una de las sedes)
