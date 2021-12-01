@@ -26,7 +26,7 @@ export const alumnasWild = () => {
         })
         .catch((error) => console.log(error));
 };
-//-------------------------- Función iterar datos --------------------------//
+//----------------------------- Función iterar datos --------------------------//
 //------------ Traer llaves ----------------//
 export const traerSedes = (nuestraData) => {
     console.log(nuestraData);
@@ -35,11 +35,11 @@ export const traerSedes = (nuestraData) => {
         console.log(key);
         document.getElementById(
             "entrar-dashboard"
-        ).innerHTML += `<button onclick="dashboard.generacion('${key}')"> ${key} </button>`;
+        ).innerHTML += `<button onclick="dashboard.generacion('${key}')"> ${key} </button>`
     }
 };
 
-//funcion para traer generaciones
+//----------------------- Funcion para traer generaciones -----------------------//
 export const traerGene = (sede) => {
 
     for (const generacion in dataToArray[0][sede].generacion) {
@@ -49,12 +49,15 @@ export const traerGene = (sede) => {
             "generations"
         ).innerHTML += `<a onclick="dashboard.traerGene('${generacion}')"class="d-block text-light p-3"
 ><i class="fas fa-user-graduate mr-2 lead"></i>${generacion} generación</a>`
+        document.getElementById("nombreSede").innerHTML = "Sede" + " " + sede
+
+
+
+
     }
 
 };
 
-
-//funcion para limpiar generacion anterior
 
 /*console.log(sede); //muestra las generaciones al dar click
         }

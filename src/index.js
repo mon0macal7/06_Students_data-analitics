@@ -49,9 +49,10 @@ window.dashboard = {
 
 //-----------------------------// Botón Volver Inicio Sedes //---------------------------------//
 
+
 let volver = document.getElementById("inicio");
 volver.addEventListener("click", () => {
     document.getElementById("sedes").hidden = false;
     document.getElementById("screenDash").hidden = true;
-    cleanGeneration()
+    cleanGeneration() // encender función limpiar generación por sede 
 });
