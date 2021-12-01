@@ -1,44 +1,58 @@
 export const ourData = "../data/students.json";
 let dataToArray = [];
 let generacionPorSede = [];
-let limpiarArray = [];
 let estudiantes = [];
 /*const limpiarArray = () => {
     return generacionPorSede = [];
 }*/
+
+
+
+//función limpiar generacion
+export const cleanGeneration = () => {
+    document.getElementById("generations").innerHTML = "";
+}
+
+
 export const alumnasWild = () => {
-  fetch(ourData)
-    .then((response) => response.json())
-    .then((data) => {
-      traerSedes(data);
-      // wildCodeCamp(data, sede)
-      // Pasar data a array vacío
-      dataToArray.push(data);
-      console.log(dataToArray);
-    })
-    .catch((error) => console.log(error));
+    fetch(ourData)
+        .then((response) => response.json())
+        .then((data) => {
+            traerSedes(data);
+            // wildCodeCamp(data, sede)
+            // Pasar data a array vacío
+            dataToArray.push(data);
+            console.log(dataToArray);
+        })
+        .catch((error) => console.log(error));
 };
 //-------------------------- Función iterar datos --------------------------//
 //------------ Traer llaves ----------------//
 export const traerSedes = (nuestraData) => {
-  console.log(nuestraData);
-  for (const key in nuestraData) {
-    console.log(key);
-    document.getElementById(
-      "entrar-dashboard"
-    ).innerHTML += `<button onclick="dashboard.generacion('${key}')"> ${key} </button>`;
-  }
+    console.log(nuestraData);
+
+    for (const key in nuestraData) {
+        console.log(key);
+        document.getElementById(
+            "entrar-dashboard"
+        ).innerHTML += `<button onclick="dashboard.generacion('${key}')"> ${key} </button>`;
+    }
 };
+
 //funcion para traer generaciones
 export const traerGene = (sede) => {
-  for (const generacion in dataToArray[0][sede].generacion) {
-    console.log(generacion);
-    document.getElementById(
-      "generations"
-    ).innerHTML += `<a onclick="dashboard.traerGene('${generacion}')"class="d-block text-light p-3"
-><i class="fas fa-user-graduate mr-2 lead"></i>${generacion} generación</a>`;
-  }
+
+    for (const generacion in dataToArray[0][sede].generacion) {
+
+        console.log(generacion);
+        document.getElementById(
+            "generations"
+        ).innerHTML += `<a onclick="dashboard.traerGene('${generacion}')"class="d-block text-light p-3"
+><i class="fas fa-user-graduate mr-2 lead"></i>${generacion} generación</a>`
+    }
+
 };
+
 
 //funcion para limpiar generacion anterior
 
