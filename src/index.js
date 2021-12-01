@@ -1,4 +1,4 @@
-import { alumnasWild, ourData } from "./data.js"; //Recibe el EXPORT de fetch de data.js
+import { alumnasWild, ourData, traerSedes, traerGene } from "./data.js"; //Recibe el EXPORT de fetch de data.js
 
 document.getElementById("sedes").hidden = false;
 document.getElementById("screenDash").hidden = true;
@@ -12,11 +12,8 @@ entrar.addEventListener("click", () => {
 alumnasWild(ourData);
 
 window.dashboard = {
-  sede: (key) => {
-    dataToArray(key);
-  },
   generacion: (generacion) => {
-    generacionPorSede(generacion);
+    traerGene(generacion);
   },
 };
 //------------------------- Datos por Ajusco ------------------------------//

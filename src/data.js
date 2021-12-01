@@ -1,6 +1,7 @@
 export const ourData = "../data/students.json";
 let dataToArray = [];
 let generacionPorSede = [];
+let limpiarArray = [];
 let estudiantes = [];
 /*const limpiarArray = () => {
     return generacionPorSede = [];
@@ -19,14 +20,28 @@ export const alumnasWild = () => {
 };
 //-------------------------- Función iterar datos --------------------------//
 //------------ Traer llaves ----------------//
-const traerSedes = (nuestraData) => {
+export const traerSedes = (nuestraData) => {
+  console.log(nuestraData);
   for (const key in nuestraData) {
     console.log(key);
     document.getElementById(
       "entrar-dashboard"
-    ).innerHTML += `<button onclick="dashboard('${key}')"> ${key} </button>`;
+    ).innerHTML += `<button onclick="dashboard.generacion('${key}')"> ${key} </button>`;
   }
 };
+//funcion para traer generaciones
+export const traerGene = (sede) => {
+  for (const generacion in dataToArray[0][sede].generacion) {
+    console.log(generacion);
+  }
+};
+
+//funcion para limpiar generacion anterior
+
+/*console.log(sede); //muestra las generaciones al dar click
+        }
+        document.getElementById("sede").innerHTML = `<h1>Campus ${sede}</h1> </h2>Generaciones: </h2>`
+        generacionPorSede.push(arrBruto[0][sede].generacion)*/
 
 //ajusco.generacion.primera.estudiantes
 //Funcion para ingresar de screen 2 a 3 de forma dinámica(screen 3 recibe data de cada una de las sedes)
