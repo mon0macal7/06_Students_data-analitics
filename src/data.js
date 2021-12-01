@@ -33,6 +33,10 @@ export const traerSedes = (nuestraData) => {
 export const traerGene = (sede) => {
   for (const generacion in dataToArray[0][sede].generacion) {
     console.log(generacion);
+    document.getElementById(
+      "generations"
+    ).innerHTML += `<a onclick="dashboard.traerGene('${generacion}')"class="d-block text-light p-3"
+><i class="fas fa-user-graduate mr-2 lead"></i>${generacion} generación</a>`;
   }
 };
 
