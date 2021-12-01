@@ -1,4 +1,4 @@
-import { alumnasWild, ourData, traerSedes, traerGene, cleanGeneration } from "./data.js"; //Recibe el EXPORT de fetch de data.js
+import { alumnasWild, ourData, traerGene, cleanGeneration } from "./data.js"; //Recibe el EXPORT de fetch de data.js
 
 document.getElementById("sedes").hidden = false;
 document.getElementById("screenDash").hidden = true;
@@ -56,3 +56,12 @@ volver.addEventListener("click", () => {
     document.getElementById("screenDash").hidden = true;
     cleanGeneration() // encender función limpiar generación por sede 
 });
+
+
+
+//--------------------/ Ícono función /----------------------------//
+
+/*let icono = document.getElementById("entrar-dashboard")
+icono.addEventListener("click", () => {
+    document.getElementById("icono-sede").innerHTML = "AQUí VA ÍCONO"
+});*/

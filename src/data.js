@@ -6,6 +6,8 @@ let estudiantes = [];
     return generacionPorSede = [];
 }*/
 
+
+
 //let iconoDinamico = ""
 
 //función limpiar generacion
@@ -51,9 +53,9 @@ export const traerGene = (sede) => {
 ><i class="fas fa-user-graduate mr-2 lead"></i>${generacion} generación</a>`
         document.getElementById("nombreSede").innerHTML = "Sede" + " " + sede
             //  addEventListener
-
     }
 };
+
 
 
 /*console.log(sede); //muestra las generaciones al dar click
