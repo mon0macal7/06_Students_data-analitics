@@ -27,9 +27,10 @@ export let alumnasWild = (ourData, sede) => {
 
 //-------------------------- Función iterar datos --------------------------//
 let wildCodeCamp = (data, sede) => {
-    console.log(data[sede]);
+    // console.log(data[sede]);
 };
 
+// ITERAR CON FOR OF ARRAY 
 
 //ajusco.generacion.primera.estudiantes
 //Funcion para ingresar de screen 2 a 3 de forma dinámica(screen 3 recibe data de cada una de las sedes)

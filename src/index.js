@@ -10,11 +10,7 @@ entrar.addEventListener("click", () => {
     document.getElementById("screenDash").hidden = false
 })
 
-
-
-
-
-
+alumnasWild(ourData)
 
 //window
 //------------------------- Datos por Ajusco ------------------------------//
@@ -43,9 +39,6 @@ iztapalapaSede.addEventListener("click", () => {
     //------ Función abrir sede en dashboard ------//
     window.location.href = "./index.html";
 });*/
-
-
-
 
 
 //-----------------------------// Botón Volver Inicio Sedes //---------------------------------//
