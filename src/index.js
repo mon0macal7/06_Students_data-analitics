@@ -1,31 +1,26 @@
-<<<<<<< HEAD
-import {
-  alumnasWild,
-  ourData,
-  traerSedes,
-  traerGene,
-  cleanGeneration,
-} from "./data.js"; //Recibe el EXPORT de fetch de data.js
-=======
-import { alumnasWild, ourData, traerGene, cleanGeneration } from "./data.js"; //Recibe el EXPORT de fetch de data.js
->>>>>>> 356b965fa7b8a0baa25cbd9a65faab83b3851b2c
+import { alumnasWild, ourData, traerGeneraciones, cleanGeneration } from "./data.js"; //Recibe el EXPORT de fetch de data.js
 
 document.getElementById("sedes").hidden = false;
 document.getElementById("screenDash").hidden = true;
 
 let entrar = document.getElementById("entrar-dashboard");
 entrar.addEventListener("click", () => {
-  document.getElementById("sedes").hidden = true;
-  document.getElementById("screenDash").hidden = false;
+    document.getElementById("sedes").hidden = true;
+    document.getElementById("screenDash").hidden = false;
 });
 
 alumnasWild(ourData);
 
 window.dashboard = {
-  generacion: (generacion) => {
-    traerGene(generacion);
-  },
+    generacion: (generacion) => {
+        traerGeneraciones(generacion);
+        // traerAlumnas(alumnas)
+    },
+    /*alumnas: (alumnas) => {
+        traerAlumnas(alumnas)
+    }*/
 };
+
 
 //------------------------- Datos por Ajusco ------------------------------//
 /*let ajuscoSede = document.getElementById("ajus");
@@ -52,20 +47,14 @@ window.dashboard = {
         console.log("click en", iztapalapaSede);
         //------ Función abrir sede en dashboard ------//
         window.location.href = "./index.html";
-
     });*/
 
 //-----------------------------// Botón Volver Inicio Sedes //---------------------------------//
 
+
 let volver = document.getElementById("inicio");
 volver.addEventListener("click", () => {
-<<<<<<< HEAD
-  document.getElementById("sedes").hidden = false;
-  document.getElementById("screenDash").hidden = true;
-  cleanGeneration(); // encender función limpiar generación por sede
-});
-=======
-    document.getElementById("sedes").hidden = false;
+    document.getElementById("sedes-screen").hidden = false;
     document.getElementById("screenDash").hidden = true;
     cleanGeneration() // encender función limpiar generación por sede 
 });
@@ -78,4 +67,3 @@ volver.addEventListener("click", () => {
 icono.addEventListener("click", () => {
     document.getElementById("icono-sede").innerHTML = "AQUí VA ÍCONO"
 });*/
->>>>>>> 356b965fa7b8a0baa25cbd9a65faab83b3851b2c
