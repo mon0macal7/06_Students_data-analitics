@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   alumnasWild,
   ourData,
@@ -5,6 +6,9 @@ import {
   traerGene,
   cleanGeneration,
 } from "./data.js"; //Recibe el EXPORT de fetch de data.js
+=======
+import { alumnasWild, ourData, traerGene, cleanGeneration } from "./data.js"; //Recibe el EXPORT de fetch de data.js
+>>>>>>> 356b965fa7b8a0baa25cbd9a65faab83b3851b2c
 
 document.getElementById("sedes").hidden = false;
 document.getElementById("screenDash").hidden = true;
@@ -55,7 +59,23 @@ window.dashboard = {
 
 let volver = document.getElementById("inicio");
 volver.addEventListener("click", () => {
+<<<<<<< HEAD
   document.getElementById("sedes").hidden = false;
   document.getElementById("screenDash").hidden = true;
   cleanGeneration(); // encender función limpiar generación por sede
 });
+=======
+    document.getElementById("sedes").hidden = false;
+    document.getElementById("screenDash").hidden = true;
+    cleanGeneration() // encender función limpiar generación por sede 
+});
+
+
+
+//--------------------/ Ícono función /----------------------------//
+
+/*let icono = document.getElementById("entrar-dashboard")
+icono.addEventListener("click", () => {
+    document.getElementById("icono-sede").innerHTML = "AQUí VA ÍCONO"
+});*/
+>>>>>>> 356b965fa7b8a0baa25cbd9a65faab83b3851b2c
